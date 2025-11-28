@@ -1,547 +1,519 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2575.6">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #4689cc; -webkit-text-stroke: #4689cc}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #8cd3fe; -webkit-text-stroke: #8cd3fe}
-    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #c27e65; -webkit-text-stroke: #c27e65}
-    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #cacaca; -webkit-text-stroke: #cacaca}
-    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #6d7378; -webkit-text-stroke: #6d7378}
-    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #cacaca; -webkit-text-stroke: #cacaca; min-height: 16.0px}
-    span.s1 {font-kerning: none; background-color: #171818}
-    span.s2 {font-kerning: none; color: #8cd3fe; background-color: #171818; -webkit-text-stroke: 0px #8cd3fe}
-    span.s3 {font-kerning: none; color: #6d6d6d; background-color: #171818; -webkit-text-stroke: 0px #6d6d6d}
-    span.s4 {font-kerning: none; color: #cacaca; background-color: #171818; -webkit-text-stroke: 0px #cacaca}
-    span.s5 {font-kerning: none; color: #c27e65; background-color: #171818; -webkit-text-stroke: 0px #c27e65}
-    span.s6 {font-kerning: none; color: #4689cc; background-color: #171818; -webkit-text-stroke: 0px #4689cc}
-    span.s7 {font-kerning: none}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zahra Fried Chicken</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- React & ReactDOM -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <!-- Babel for JSX -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 </head>
-<body>
-<p class="p1"><span class="s1">&lt;!DOCTYPE</span><span class="s2"> html</span><span class="s1">&gt;</span></p>
-<p class="p1"><span class="s3">&lt;</span><span class="s1">html</span><span class="s4"> </span><span class="s2">lang</span><span class="s3">=</span><span class="s5">"en"</span><span class="s3">&gt;</span></p>
-<p class="p1"><span class="s3">&lt;</span><span class="s1">head</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s6">meta</span><span class="s4"> </span><span class="s1">charset</span><span class="s3">=</span><span class="s5">"UTF-8"</span><span class="s3">&gt;</span></p>
-<p class="p3"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s6">meta</span><span class="s4"> </span><span class="s2">name</span><span class="s3">=</span><span class="s1">"viewport"</span><span class="s4"> </span><span class="s2">content</span><span class="s3">=</span><span class="s1">"width=device-width, initial-scale=1.0"</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s6">title</span><span class="s3">&gt;</span><span class="s1">Zahra Fried Chicken</span><span class="s3">&lt;/</span><span class="s6">title</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s1">&lt;!-- Tailwind CSS --&gt;</span></p>
-<p class="p3"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s6">script</span><span class="s4"> </span><span class="s2">src</span><span class="s3">=</span><span class="s1">"https://cdn.tailwindcss.com"</span><span class="s3">&gt;&lt;/</span><span class="s6">script</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s1">&lt;!-- React &amp; ReactDOM --&gt;</span></p>
-<p class="p3"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s6">script</span><span class="s4"> </span><span class="s2">crossorigin</span><span class="s4"> </span><span class="s2">src</span><span class="s3">=</span><span class="s1">"https://unpkg.com/react@18/umd/react.production.min.js"</span><span class="s3">&gt;&lt;/</span><span class="s6">script</span><span class="s3">&gt;</span></p>
-<p class="p3"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s6">script</span><span class="s4"> </span><span class="s2">crossorigin</span><span class="s4"> </span><span class="s2">src</span><span class="s3">=</span><span class="s1">"https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"</span><span class="s3">&gt;&lt;/</span><span class="s6">script</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s1">&lt;!-- Babel for JSX --&gt;</span></p>
-<p class="p3"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s6">script</span><span class="s4"> </span><span class="s2">src</span><span class="s3">=</span><span class="s1">"https://unpkg.com/@babel/standalone/babel.min.js"</span><span class="s3">&gt;&lt;/</span><span class="s6">script</span><span class="s3">&gt;</span></p>
-<p class="p1"><span class="s3">&lt;/</span><span class="s1">head</span><span class="s3">&gt;</span></p>
-<p class="p3"><span class="s3">&lt;</span><span class="s6">body</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"bg-white"</span><span class="s3">&gt;</span></p>
-<p class="p3"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s6">div</span><span class="s4"> </span><span class="s2">id</span><span class="s3">=</span><span class="s1">"root"</span><span class="s3">&gt;&lt;/</span><span class="s6">div</span><span class="s3">&gt;</span></p>
-<p class="p6"><span class="s7"></span><br></p>
-<p class="p3"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s6">script</span><span class="s4"> </span><span class="s2">type</span><span class="s3">=</span><span class="s1">"text/babel"</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>const { useState, useMemo } = React;</span></p>
-<p class="p6"><span class="s7"></span><br></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>// --- ICONS (Replacements for Lucide-React to work in Browser) ---</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>const ShoppingBag = ({size = 24, className = ""}) =&gt; (</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}&gt;&lt;path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/&gt;&lt;path d="M3 6h18"/&gt;&lt;path d="M16 10a4 4 0 0 1-8 0"/&gt;&lt;/svg&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>);</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>const X = ({size = 24, className = ""}) =&gt; (</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}&gt;&lt;path d="M18 6 6 18"/&gt;&lt;path d="m6 6 18 12"/&gt;&lt;/svg&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>);</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>const Plus = ({size = 24, className = ""}) =&gt; (</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}&gt;&lt;path d="M5 12h14"/&gt;&lt;path d="M12 5v14"/&gt;&lt;/svg&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>);</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>const Minus = ({size = 24, className = ""}) =&gt; (</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}&gt;&lt;path d="M5 12h14"/&gt;&lt;/svg&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>);</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>const Heart = ({size = 24, fill = "none", className = ""}) =&gt; (</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill={fill} stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}&gt;&lt;path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/&gt;&lt;/svg&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>);</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>const Search = ({size = 24, className = ""}) =&gt; (</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}&gt;&lt;circle cx="11" cy="11" r="8"/&gt;&lt;path d="m21 21-4.3-4.3"/&gt;&lt;/svg&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>);</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>const Trash2 = ({size = 24, className = ""}) =&gt; (</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}&gt;&lt;path d="M3 6h18"/&gt;&lt;path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/&gt;&lt;path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/&gt;&lt;line x1="10" x2="10" y1="11" y2="17"/&gt;&lt;line x1="14" x2="14" y1="11" y2="17"/&gt;&lt;/svg&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>);</span></p>
-<p class="p6"><span class="s7"></span><br></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>// --- MENU DATA ---</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>const MENU_DATA = [</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>{</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>id: 'broast',</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>name: 'Broasted / بروست',</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>items: [</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>{<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>id: 101,<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>name: 'Spicy Broasted / بروست حراق',<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>price: 17,<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>description: '4 pcs spicy chicken, fries, garlic sauce, bun',<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>image: 'https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&amp;fit=crop&amp;w=800&amp;q=80'<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>},</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>{<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>id: 102,<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>name: 'Regular Broasted / بروست عادي',<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>price: 17,<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>description: '4 pcs original chicken, fries, garlic sauce, bun',<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>image: 'https://images.unsplash.com/photo-1562967960-f0d015c90ec5?auto=format&amp;fit=crop&amp;w=800&amp;q=80'<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>},</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>]</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>},</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>{</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>id: 'burgers',</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>name: 'Burgers / برجر',</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>items: [</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>{<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>id: 201,<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>name: 'Crispy Chicken / كرسبي تشكن',<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>hasVariants: true,</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>variants: [</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>{ name: 'Meal / وجبة', price: 23 },</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>{ name: 'Sandwich / ساندويتش', price: 17 }</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>],</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>image: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&amp;fit=crop&amp;w=800&amp;q=80'<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>},</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>{<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>id: 202,<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>name: 'Classic Burger / كلاسيك برجر',<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>hasVariants: true,</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>variants: [</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>{ name: 'Meal / وجبة', price: 23 },</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>{ name: 'Sandwich / ساندويتش', price: 17 }</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>],</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>image: 'https://images.unsplash.com/photo-1551782450-a2132b4ba21d?auto=format&amp;fit=crop&amp;w=800&amp;q=80'<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>},</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>{<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>id: 203,<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>name: 'Zinger Chicken / زنجر تشكن',<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>hasVariants: true,</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>variants: [</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>{ name: 'Meal / وجبة', price: 22 },</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>{ name: 'Sandwich / ساندويتش', price: 16 }</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>],</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>image: 'https://images.unsplash.com/photo-1615297348954-1b12b596201b?auto=format&amp;fit=crop&amp;w=800&amp;q=80'<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>},</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>]</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>},</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>{</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>id: 'shawarma',</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>name: 'Shawarma / شاورما',</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>items: [</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>{<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>id: 401,<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>name: 'Small Shawarma / شاورما صغير',<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>price: 4,<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>image: 'https://images.unsplash.com/photo-1633321769407-af3c4772e013?auto=format&amp;fit=crop&amp;w=800&amp;q=80'<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>},</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>{<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>id: 403,<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>name: 'Rocket Shawarma / صاروخ',<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>price: 8,<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>image: 'https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&amp;fit=crop&amp;w=800&amp;q=80'<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>},</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>{<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>id: 405,<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>name: 'Arabi Plate / صحن عربي',<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>price: 17,<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>image: 'https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&amp;fit=crop&amp;w=800&amp;q=80'<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>},</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>]</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>},</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>{</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>id: 'grilled',</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>name: 'Grilled / مشوي',</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>items: [</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>{<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>id: 501,<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>name: 'Honey Master / هوني ماستر',<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>hasVariants: true,</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>variants: [{ name: 'Meal / وجبة', price: 22 }, { name: 'Sandwich / ساندويتش', price: 16 }],</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>image: 'https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&amp;fit=crop&amp;w=800&amp;q=80'<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>},</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>{<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>id: 502,<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>name: 'Classic Grilled / كلاسيك مشوي',<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>hasVariants: true,</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>variants: [{ name: 'Meal / وجبة', price: 22 }, { name: 'Sandwich / ساندويتش', price: 16 }],</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>image: 'https://images.unsplash.com/photo-1521305916504-4a1121188589?auto=format&amp;fit=crop&amp;w=800&amp;q=80'<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>},</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>]</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>},</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>{</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>id: 'sides',</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>name: 'Sides / جانبي',</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>items: [</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>{<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>id: 601,<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>name: 'Strips / ستريس',<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>price: 20,<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>image: 'https://images.unsplash.com/photo-1563897539633-73a8e5013a63?auto=format&amp;fit=crop&amp;w=800&amp;q=80'<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>},</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>{<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>id: 603,<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>name: 'Cheese Fries / فرايز جبن',<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>price: 8,<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>image: 'https://images.unsplash.com/photo-1585109649139-366815a0d713?auto=format&amp;fit=crop&amp;w=800&amp;q=80'<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>},</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>{<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>id: 604,<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>name: 'French Fries / فرايز',<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>price: 5,<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>image: 'https://images.unsplash.com/photo-1630384060421-a4323ceca041?auto=format&amp;fit=crop&amp;w=800&amp;q=80'<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>},</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>]</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>},</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>{</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>id: 'drinks',</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>name: 'Drinks / مشروبات',</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>items: [</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>{<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>id: 701,<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>name: 'Pepsi / بيبسي',<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>price: 2.5,<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>image: 'https://images.unsplash.com/photo-1622483767028-3f66f32aef97?auto=format&amp;fit=crop&amp;w=800&amp;q=80'<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>},</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>{<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>id: 702,<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>name: 'Juice / عصير',<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>price: 2,<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>image: 'https://images.unsplash.com/photo-1613478223719-2ab802602423?auto=format&amp;fit=crop&amp;w=800&amp;q=80'<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>},</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>{<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>id: 703,<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>name: 'Water / ماء',<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>price: 1,<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>image: 'https://images.unsplash.com/photo-1564419320461-6870880221ad?auto=format&amp;fit=crop&amp;w=800&amp;q=80'<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>},</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>]</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>];</span></p>
-<p class="p6"><span class="s7"></span><br></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>const RESTAURANT_PHONE = "966550298284";<span class="Apple-converted-space"> </span></span></p>
-<p class="p6"><span class="s7"></span><br></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>// --- MAIN APP COMPONENT ---</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>function App() {</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>const [activeCategory, setActiveCategory] = useState('broast');</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>const [cart, setCart] = useState([]);</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>const [isCartOpen, setIsCartOpen] = useState(false);</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>const [showVariantModal, setShowVariantModal] = useState(null);<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>const [favorites, setFavorites] = useState([]);</span></p>
-<p class="p6"><span class="s7"></span><br></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>const addToCart = (item, variant = null) =&gt; {</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>setCart(prev =&gt; {</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>const uniqueId = variant ? `${item.id}-${variant.name}` : item.id;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>const existing = prev.find(i =&gt; i.uniqueId === uniqueId);</span></p>
-<p class="p6"><span class="s1"><span class="Apple-converted-space">                </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>if (existing) {</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>return prev.map(i =&gt; i.uniqueId === uniqueId ? { ...i, qty: i.qty + 1 } : i);</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>}</span></p>
-<p class="p6"><span class="s1"><span class="Apple-converted-space">                </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>return [...prev, {</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>uniqueId,</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>id: item.id,</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>name: item.name,<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>price: variant ? variant.price : item.price,</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>variantName: variant ? variant.name : null,</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>qty: 1,</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>image: item.image</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>}];</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>});</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>setShowVariantModal(null);</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>};</span></p>
-<p class="p6"><span class="s7"></span><br></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>const updateQty = (uniqueId, change) =&gt; {</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>setCart(prev =&gt; prev.map(i =&gt; {</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>if (i.uniqueId === uniqueId) {</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>return { ...i, qty: Math.max(0, i.qty + change) };</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>}</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>return i;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>}).filter(i =&gt; i.qty &gt; 0));</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>};</span></p>
-<p class="p6"><span class="s7"></span><br></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>const toggleFavorite = (e, itemId) =&gt; {</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>e.stopPropagation();</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>setFavorites(prev =&gt;<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>prev.includes(itemId) ? prev.filter(id =&gt; id !== itemId) : [...prev, itemId]</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>);</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>};</span></p>
-<p class="p6"><span class="s7"></span><br></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>const cartTotal = useMemo(() =&gt; {</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>return cart.reduce((total, item) =&gt; total + (item.price * item.qty), 0);</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>}, [cart]);</span></p>
-<p class="p6"><span class="s7"></span><br></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>const totalItems = useMemo(() =&gt; cart.reduce((acc, item) =&gt; acc + item.qty, 0), [cart]);</span></p>
-<p class="p6"><span class="s7"></span><br></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>const handleCheckout = () =&gt; {</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>if (cart.length === 0) return;</span></p>
-<p class="p6"><span class="s1"><span class="Apple-converted-space">                </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>let message = `*New Order / طلب جديد* 🍗\n`;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>message += `*Zahra Fried Chicken*\n`;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>message += `------------------\n`;</span></p>
-<p class="p6"><span class="s1"><span class="Apple-converted-space">                </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>cart.forEach(item =&gt; {</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>const variantStr = item.variantName ? `(${item.variantName})` : '';</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>message += `${item.qty}x ${item.name} ${variantStr}\n`;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>message += ` <span class="Apple-converted-space">  </span>SAR ${(item.price * item.qty).toFixed(2)}\n`;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>});</span></p>
-<p class="p6"><span class="s1"><span class="Apple-converted-space">                </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>message += `------------------\n`;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>message += `*Total: SAR ${cartTotal.toFixed(2)}*\n`;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>message += `\nPlease confirm my order!`;</span></p>
-<p class="p6"><span class="s7"></span><br></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>const url = `https://wa.me/${RESTAURANT_PHONE}?text=${encodeURIComponent(message)}`;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>window.open(url, '_blank');</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>};</span></p>
-<p class="p6"><span class="s7"></span><br></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>const scrollToCategory = (catId) =&gt; {</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>setActiveCategory(catId);</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>const element = document.getElementById(catId);</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>if (element) {</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>const headerOffset = 140;<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>const elementPosition = element.getBoundingClientRect().top;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>const offsetPosition = elementPosition + window.pageYOffset - headerOffset;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>window.scrollTo({</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>top: offsetPosition,</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>behavior: "smooth"</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>});</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>}</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>};</span></p>
-<p class="p6"><span class="s7"></span><br></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>return (</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div className="bg-white min-h-screen font-sans pb-32 relative overflow-x-hidden"&gt;</span></p>
-<p class="p6"><span class="s1"><span class="Apple-converted-space">                </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>{/* Top Navigation Bar - RED THEME */}</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div className="bg-red-600 sticky top-0 z-40 shadow-md"&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div className="flex justify-between items-center px-5 py-4 border-b border-red-500"&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div className="flex items-center space-x-3"&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;div className="bg-white p-2 rounded-xl shadow-lg"&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;img src="https://img.icons8.com/color/48/fried-chicken.png" alt="logo" className="w-6 h-6"/&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;div&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;h1 className="text-xl font-black text-white leading-none tracking-tight"&gt;ZAHRA&lt;/h1&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;p className="text-[10px] font-bold text-red-100 uppercase tracking-widest mt-0.5"&gt;Fried Chicken&lt;/p&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div className="flex space-x-2"&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;button className="p-2.5 bg-red-500 rounded-full text-white hover:bg-red-700 transition-colors"&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;Search size={20} /&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;/button&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
-<p class="p6"><span class="s7"></span><br></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>{/* Categories */}</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div className="flex overflow-x-auto px-4 py-3 space-x-3 no-scrollbar bg-red-600"&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>{MENU_DATA.map(cat =&gt; (</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;button</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>key={cat.id}</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>onClick={() =&gt; scrollToCategory(cat.id)}</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>className={`px-5 py-2.5 rounded-full text-sm font-bold whitespace-nowrap transition-all duration-300 border-2 ${</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>activeCategory === cat.id<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>? 'bg-yellow-400 text-red-900 border-yellow-400 shadow-lg scale-105'<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>: 'bg-red-700 text-red-100 border-red-700 hover:bg-red-500'</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>}`}</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>{cat.name.split('/')[1]}<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/button&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>))}</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
-<p class="p6"><span class="s7"></span><br></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>{/* Main Content */}</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div className="max-w-xl mx-auto p-4"&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>{MENU_DATA.map(category =&gt; (</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div key={category.id} id={category.id} className="mb-10 scroll-mt-44"&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;h2 className="text-2xl font-black text-gray-900 mb-5 px-1 flex items-center tracking-tight border-l-4 border-yellow-400 pl-3"&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>{category.name}</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/h2&gt;</span></p>
-<p class="p6"><span class="s1"><span class="Apple-converted-space">                        </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div className="grid grid-cols-2 gap-4"&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>{category.items.map(item =&gt; (</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;div<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span>key={item.id}<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span>className="bg-white rounded-2xl shadow-[0_5px_15px_rgba(0,0,0,0.05)] border border-gray-100 overflow-hidden flex flex-col h-full active:scale-[0.98] transition-transform group"</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span>onClick={() =&gt; item.hasVariants ? setShowVariantModal(item) : addToCart(item)}</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;div className="relative aspect-square bg-gray-100 overflow-hidden"&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;img<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                    </span>src={item.image}<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                    </span>alt={item.name}<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                    </span>className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                    </span>loading="lazy"</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span>/&gt;</span></p>
-<p class="p6"><span class="s1"><span class="Apple-converted-space">                                </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;button<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                    </span>onClick={(e) =&gt; toggleFavorite(e, item.id)}</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                    </span>className="absolute top-2 right-2 p-2 bg-white/90 backdrop-blur-sm rounded-full text-gray-300 hover:text-red-600 hover:bg-white transition-all shadow-sm z-10"</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span>&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;Heart size={16} fill={favorites.includes(item.id) ? "currentColor" : "none"} className={favorites.includes(item.id) ? "text-red-600" : ""}/&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;/button&gt;</span></p>
-<p class="p6"><span class="s7"></span><br></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;div className="absolute bottom-2 left-2 bg-yellow-400 text-red-900 px-3 py-1 rounded-lg text-xs font-black shadow-md z-10"&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                    </span>SAR {item.hasVariants ? item.variants[1].price : item.price}</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;/div&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</span></p>
-<p class="p6"><span class="s7"></span><br></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;div className="p-3.5 flex flex-col flex-1 justify-between bg-white relative z-20"&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;div&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;h3 className="font-bold text-gray-900 text-[15px] leading-snug mb-1.5"&gt;{item.name.split('/')[1]}&lt;/h3&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;p className="text-[10px] text-gray-500 leading-relaxed font-medium line-clamp-2"&gt;{item.description || item.name.split('/')[0]}&lt;/p&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;/div&gt;</span></p>
-<p class="p6"><span class="s1"><span class="Apple-converted-space">                                </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;div className="mt-4 flex justify-end"&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;div className="w-9 h-9 bg-red-50 text-red-600 rounded-full flex items-center justify-center border border-red-100 group-hover:bg-red-600 group-hover:text-white transition-colors shadow-sm"&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;Plus size={18} /&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;/div&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;/div&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>))}</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>))}</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
-<p class="p6"><span class="s7"></span><br></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>{/* Variant Modal */}</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>{showVariantModal &amp;&amp; (</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div className="fixed inset-0 z-50 flex items-center justify-center p-4"&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div className="absolute inset-0 bg-black/60 backdrop-blur-sm transition-opacity" onClick={() =&gt; setShowVariantModal(null)}&gt;&lt;/div&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div className="bg-white rounded-[2rem] w-full max-w-sm overflow-hidden shadow-2xl relative z-10 animate-in zoom-in-95 duration-300"&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div className="h-56 w-full overflow-hidden relative"&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;img src={showVariantModal.image} className="w-full h-full object-cover" /&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"&gt;&lt;/div&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;button onClick={() =&gt; setShowVariantModal(null)} className="absolute top-4 right-4 p-2 bg-white/20 backdrop-blur-md text-white rounded-full hover:bg-white/30 transition-colors"&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;X size={20} /&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;/button&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;div className="absolute bottom-4 left-4 text-white p-2"&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;h3 className="text-2xl font-bold leading-tight"&gt;{showVariantModal.name}&lt;/h3&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</span></p>
-<p class="p6"><span class="s1"><span class="Apple-converted-space">                        </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div className="p-6"&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;p className="text-gray-500 text-sm font-bold mb-4 uppercase tracking-wide flex items-center"&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;span className="w-2 h-2 bg-yellow-400 rounded-full mr-2"&gt;&lt;/span&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span>Select Options</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;/p&gt;</span></p>
-<p class="p6"><span class="s1"><span class="Apple-converted-space">                            </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;div className="space-y-3"&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span>{showVariantModal.variants.map((v, idx) =&gt; (</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;button<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                        </span>key={idx}</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                        </span>onClick={() =&gt; addToCart(showVariantModal, v)}</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                        </span>className="w-full flex justify-between items-center p-4 rounded-xl border border-gray-100 bg-gray-50 hover:border-red-500 hover:bg-red-50 hover:shadow-lg transition-all group"</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                    </span>&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;span className="font-bold text-gray-700 group-hover:text-red-700"&gt;{v.name}&lt;/span&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;span className="font-bold text-red-600 bg-white border border-red-100 px-3 py-1 rounded-lg shadow-sm"&gt;SAR {v.price}&lt;/span&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;/button&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span>))}</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>)}</span></p>
-<p class="p6"><span class="s7"></span><br></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>{/* Bottom Floating Bar */}</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>{cart.length &gt; 0 &amp;&amp; (</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-100 p-4 pb-8 shadow-[0_-10px_30px_rgba(0,0,0,0.05)] z-40 animate-in slide-in-from-bottom-5"&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div className="max-w-xl mx-auto flex items-center space-x-4"&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div className="flex-1 cursor-pointer" onClick={() =&gt; setIsCartOpen(true)}&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;div className="text-[10px] text-gray-400 uppercase font-bold tracking-widest mb-0.5"&gt;Total&lt;/div&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;div className="text-2xl font-black text-gray-900 tracking-tight"&gt;SAR {cartTotal.toFixed(2)}&lt;/div&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</span></p>
-<p class="p6"><span class="s7"></span><br></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;button<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>onClick={() =&gt; setIsCartOpen(true)}</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>className="bg-red-600 text-white px-8 py-3.5 rounded-xl font-bold flex items-center space-x-3 active:scale-95 transition-transform shadow-xl shadow-red-200"</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span className="text-sm"&gt;View Order&lt;/span&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;div className="bg-white/20 text-xs px-2.5 py-1 rounded-full font-bold"&gt;{totalItems}&lt;/div&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/button&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>)}</span></p>
-<p class="p6"><span class="s7"></span><br></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>{/* Full Screen Cart */}</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>{isCartOpen &amp;&amp; (</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div className="fixed inset-0 z-50 bg-gray-50 flex flex-col animate-in slide-in-from-bottom-10 duration-300"&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div className="p-4 bg-white shadow-sm flex items-center justify-between z-10 border-b border-gray-100"&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;h2 className="text-xl font-black text-gray-900"&gt;My Order&lt;/h2&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;button onClick={() =&gt; setIsCartOpen(false)} className="p-2 bg-gray-50 rounded-full hover:bg-gray-100 text-gray-500"&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;X size={24} /&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/button&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
-<p class="p6"><span class="s7"></span><br></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div className="flex-1 overflow-y-auto p-4"&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>{cart.length === 0 ? (</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;div className="flex flex-col items-center justify-center h-full text-gray-400"&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;ShoppingBag size={64} className="mb-4 opacity-10"/&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;p className="font-bold text-gray-300"&gt;Your basket is empty&lt;/p&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;/div&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>) : (</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;div className="space-y-4"&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span>{cart.map(item =&gt; (</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;div key={item.uniqueId} className="bg-white p-4 rounded-2xl shadow-[0_2px_10px_rgba(0,0,0,0.03)] border border-gray-100 flex items-start space-x-4"&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;div className="w-20 h-20 bg-gray-50 rounded-xl overflow-hidden flex-shrink-0"&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;img src={item.image} className="w-full h-full object-cover" /&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;/div&gt;</span></p>
-<p class="p6"><span class="s1"><span class="Apple-converted-space">                                        </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;div className="flex-1 py-1"&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;div className="flex justify-between items-start mb-2"&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                                </span>&lt;div&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                                        </span>&lt;h4 className="font-bold text-gray-900 line-clamp-1 text-sm"&gt;{item.name.split('/')[1]}&lt;/h4&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                                        </span>&lt;h4 className="font-medium text-gray-400 text-xs"&gt;{item.name.split('/')[0]}&lt;/h4&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                                        </span>{item.variantName &amp;&amp; &lt;p className="text-xs text-yellow-600 font-bold mt-1 bg-yellow-50 inline-block px-2 py-0.5 rounded"&gt;{item.variantName}&lt;/p&gt;}</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                                </span>&lt;/div&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                                </span>&lt;div className="font-bold text-gray-900"&gt;SAR {item.price * item.qty}&lt;/div&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;/div&gt;</span></p>
-<p class="p6"><span class="s7"></span><br></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;div className="flex items-center space-x-3"&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                                    </span>&lt;div className="flex items-center bg-gray-50 rounded-lg p-1 border border-gray-100"&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                                        </span>&lt;button onClick={() =&gt; updateQty(item.uniqueId, -1)} className="w-7 h-7 bg-white rounded-md shadow-sm flex items-center justify-center text-gray-600 hover:text-red-500"&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                                            </span>&lt;Minus size={14}/&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                                        </span>&lt;/button&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                                        </span>&lt;span className="w-8 text-center text-sm font-bold"&gt;{item.qty}&lt;/span&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                                        </span>&lt;button onClick={() =&gt; updateQty(item.uniqueId, 1)} className="w-7 h-7 bg-white rounded-md shadow-sm flex items-center justify-center text-gray-600 hover:text-green-500"&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                                            </span>&lt;Plus size={14}/&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                                        </span>&lt;/button&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                                    </span>&lt;/div&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;/div&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;/div&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;/div&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span>))}</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>)}</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
-<p class="p6"><span class="s7"></span><br></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div className="p-6 bg-white border-t border-gray-100 space-y-4 shadow-[0_-10px_40px_rgba(0,0,0,0.05)] rounded-t-[2rem]"&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div className="flex justify-between text-gray-500 text-sm font-medium"&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span&gt;Subtotal&lt;/span&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span&gt;SAR {cartTotal.toFixed(2)}&lt;/span&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div className="flex justify-between font-black text-2xl text-gray-900"&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span&gt;Total&lt;/span&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span&gt;SAR {cartTotal.toFixed(2)}&lt;/span&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</span></p>
-<p class="p6"><span class="s1"><span class="Apple-converted-space">                        </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;button<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>onClick={handleCheckout}</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>disabled={cart.length === 0}</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>className="w-full bg-[#25D366] hover:bg-[#20bd5a] text-white py-4 rounded-xl font-bold text-lg flex items-center justify-center space-x-2 shadow-lg shadow-green-200 active:scale-95 transition-all disabled:opacity-50 disabled:scale-100"</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="wa" className="w-6 h-6 brightness-0 invert"/&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span&gt;Send Order to WhatsApp&lt;/span&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/button&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>)}</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>);</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p6"><span class="s7"></span><br></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>const root = ReactDOM.createRoot(document.getElementById('root'));</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>root.render(&lt;App /&gt;);</span></p>
-<p class="p1"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;/</span><span class="s1">script</span><span class="s3">&gt;</span></p>
-<p class="p1"><span class="s3">&lt;/</span><span class="s1">body</span><span class="s3">&gt;</span></p>
-<p class="p1"><span class="s3">&lt;/</span><span class="s1">html</span><span class="s3">&gt;</span></p>
-<p class="p6"><span class="s7"></span><br></p>
+<body class="bg-white">
+    <div id="root"></div>
+
+    <script type="text/babel">
+        const { useState, useMemo } = React;
+
+        // --- ICONS (Replacements for Lucide-React to work in Browser) ---
+        const ShoppingBag = ({size = 24, className = ""}) => (
+            <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        );
+        const X = ({size = 24, className = ""}) => (
+            <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}><path d="M18 6 6 18"/><path d="m6 6 18 12"/></svg>
+        );
+        const Plus = ({size = 24, className = ""}) => (
+            <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}><path d="M5 12h14"/><path d="M12 5v14"/></svg>
+        );
+        const Minus = ({size = 24, className = ""}) => (
+            <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}><path d="M5 12h14"/></svg>
+        );
+        const Heart = ({size = 24, fill = "none", className = ""}) => (
+            <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill={fill} stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+        );
+        const Search = ({size = 24, className = ""}) => (
+            <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+        );
+        const Trash2 = ({size = 24, className = ""}) => (
+            <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/><line x1="10" x2="10" y1="11" y2="17"/><line x1="14" x2="14" y1="11" y2="17"/></svg>
+        );
+
+        // --- MENU DATA ---
+        const MENU_DATA = [
+            {
+                id: 'broast',
+                name: 'Broasted / بروست',
+                items: [
+                { 
+                    id: 101, 
+                    name: 'Spicy Broasted / بروست حراق', 
+                    price: 17, 
+                    description: '4 pcs spicy chicken, fries, garlic sauce, bun', 
+                    image: 'https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&w=800&q=80' 
+                },
+                { 
+                    id: 102, 
+                    name: 'Regular Broasted / بروست عادي', 
+                    price: 17, 
+                    description: '4 pcs original chicken, fries, garlic sauce, bun', 
+                    image: 'https://images.unsplash.com/photo-1562967960-f0d015c90ec5?auto=format&fit=crop&w=800&q=80' 
+                },
+                ]
+            },
+            {
+                id: 'burgers',
+                name: 'Burgers / برجر',
+                items: [
+                { 
+                    id: 201, 
+                    name: 'Crispy Chicken / كرسبي تشكن', 
+                    hasVariants: true,
+                    variants: [
+                        { name: 'Meal / وجبة', price: 23 },
+                        { name: 'Sandwich / ساندويتش', price: 17 }
+                    ],
+                    image: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=80' 
+                },
+                { 
+                    id: 202, 
+                    name: 'Classic Burger / كلاسيك برجر', 
+                    hasVariants: true,
+                    variants: [
+                        { name: 'Meal / وجبة', price: 23 },
+                        { name: 'Sandwich / ساندويتش', price: 17 }
+                    ],
+                    image: 'https://images.unsplash.com/photo-1551782450-a2132b4ba21d?auto=format&fit=crop&w=800&q=80' 
+                },
+                { 
+                    id: 203, 
+                    name: 'Zinger Chicken / زنجر تشكن', 
+                    hasVariants: true,
+                    variants: [
+                        { name: 'Meal / وجبة', price: 22 },
+                        { name: 'Sandwich / ساندويتش', price: 16 }
+                    ],
+                    image: 'https://images.unsplash.com/photo-1615297348954-1b12b596201b?auto=format&fit=crop&w=800&q=80' 
+                },
+                ]
+            },
+            {
+                id: 'shawarma',
+                name: 'Shawarma / شاورما',
+                items: [
+                { 
+                    id: 401, 
+                    name: 'Small Shawarma / شاورما صغير', 
+                    price: 4, 
+                    image: 'https://images.unsplash.com/photo-1633321769407-af3c4772e013?auto=format&fit=crop&w=800&q=80' 
+                },
+                { 
+                    id: 403, 
+                    name: 'Rocket Shawarma / صاروخ', 
+                    price: 8, 
+                    image: 'https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&fit=crop&w=800&q=80' 
+                },
+                { 
+                    id: 405, 
+                    name: 'Arabi Plate / صحن عربي', 
+                    price: 17, 
+                    image: 'https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&fit=crop&w=800&q=80' 
+                },
+                ]
+            },
+            {
+                id: 'grilled',
+                name: 'Grilled / مشوي',
+                items: [
+                { 
+                    id: 501, 
+                    name: 'Honey Master / هوني ماستر', 
+                    hasVariants: true,
+                    variants: [{ name: 'Meal / وجبة', price: 22 }, { name: 'Sandwich / ساندويتش', price: 16 }],
+                    image: 'https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=800&q=80' 
+                },
+                { 
+                    id: 502, 
+                    name: 'Classic Grilled / كلاسيك مشوي', 
+                    hasVariants: true,
+                    variants: [{ name: 'Meal / وجبة', price: 22 }, { name: 'Sandwich / ساندويتش', price: 16 }],
+                    image: 'https://images.unsplash.com/photo-1521305916504-4a1121188589?auto=format&fit=crop&w=800&q=80' 
+                },
+                ]
+            },
+            {
+                id: 'sides',
+                name: 'Sides / جانبي',
+                items: [
+                { 
+                    id: 601, 
+                    name: 'Strips / ستريس', 
+                    price: 20, 
+                    image: 'https://images.unsplash.com/photo-1563897539633-73a8e5013a63?auto=format&fit=crop&w=800&q=80' 
+                },
+                { 
+                    id: 603, 
+                    name: 'Cheese Fries / فرايز جبن', 
+                    price: 8, 
+                    image: 'https://images.unsplash.com/photo-1585109649139-366815a0d713?auto=format&fit=crop&w=800&q=80' 
+                },
+                { 
+                    id: 604, 
+                    name: 'French Fries / فرايز', 
+                    price: 5, 
+                    image: 'https://images.unsplash.com/photo-1630384060421-a4323ceca041?auto=format&fit=crop&w=800&q=80' 
+                },
+                ]
+            },
+            {
+                id: 'drinks',
+                name: 'Drinks / مشروبات',
+                items: [
+                { 
+                    id: 701, 
+                    name: 'Pepsi / بيبسي', 
+                    price: 2.5, 
+                    image: 'https://images.unsplash.com/photo-1622483767028-3f66f32aef97?auto=format&fit=crop&w=800&q=80' 
+                },
+                { 
+                    id: 702, 
+                    name: 'Juice / عصير', 
+                    price: 2, 
+                    image: 'https://images.unsplash.com/photo-1613478223719-2ab802602423?auto=format&fit=crop&w=800&q=80' 
+                },
+                { 
+                    id: 703, 
+                    name: 'Water / ماء', 
+                    price: 1, 
+                    image: 'https://images.unsplash.com/photo-1564419320461-6870880221ad?auto=format&fit=crop&w=800&q=80' 
+                },
+                ]
+            }
+        ];
+
+        const RESTAURANT_PHONE = "966550298284"; 
+
+        // --- MAIN APP COMPONENT ---
+        function App() {
+            const [activeCategory, setActiveCategory] = useState('broast');
+            const [cart, setCart] = useState([]);
+            const [isCartOpen, setIsCartOpen] = useState(false);
+            const [showVariantModal, setShowVariantModal] = useState(null); 
+            const [favorites, setFavorites] = useState([]);
+
+            const addToCart = (item, variant = null) => {
+                setCart(prev => {
+                const uniqueId = variant ? `${item.id}-${variant.name}` : item.id;
+                const existing = prev.find(i => i.uniqueId === uniqueId);
+                
+                if (existing) {
+                    return prev.map(i => i.uniqueId === uniqueId ? { ...i, qty: i.qty + 1 } : i);
+                }
+                
+                return [...prev, {
+                    uniqueId,
+                    id: item.id,
+                    name: item.name, 
+                    price: variant ? variant.price : item.price,
+                    variantName: variant ? variant.name : null,
+                    qty: 1,
+                    image: item.image
+                }];
+                });
+                setShowVariantModal(null);
+            };
+
+            const updateQty = (uniqueId, change) => {
+                setCart(prev => prev.map(i => {
+                if (i.uniqueId === uniqueId) {
+                    return { ...i, qty: Math.max(0, i.qty + change) };
+                }
+                return i;
+                }).filter(i => i.qty > 0));
+            };
+
+            const toggleFavorite = (e, itemId) => {
+                e.stopPropagation();
+                setFavorites(prev => 
+                prev.includes(itemId) ? prev.filter(id => id !== itemId) : [...prev, itemId]
+                );
+            };
+
+            const cartTotal = useMemo(() => {
+                return cart.reduce((total, item) => total + (item.price * item.qty), 0);
+            }, [cart]);
+
+            const totalItems = useMemo(() => cart.reduce((acc, item) => acc + item.qty, 0), [cart]);
+
+            const handleCheckout = () => {
+                if (cart.length === 0) return;
+                
+                let message = `*New Order / طلب جديد* 🍗\n`;
+                message += `*Zahra Fried Chicken*\n`;
+                message += `------------------\n`;
+                
+                cart.forEach(item => {
+                const variantStr = item.variantName ? `(${item.variantName})` : '';
+                message += `${item.qty}x ${item.name} ${variantStr}\n`;
+                message += `   SAR ${(item.price * item.qty).toFixed(2)}\n`;
+                });
+                
+                message += `------------------\n`;
+                message += `*Total: SAR ${cartTotal.toFixed(2)}*\n`;
+                message += `\nPlease confirm my order!`;
+
+                const url = `https://wa.me/${RESTAURANT_PHONE}?text=${encodeURIComponent(message)}`;
+                window.open(url, '_blank');
+            };
+
+            const scrollToCategory = (catId) => {
+                setActiveCategory(catId);
+                const element = document.getElementById(catId);
+                if (element) {
+                    const headerOffset = 140; 
+                    const elementPosition = element.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: "smooth"
+                    });
+                }
+            };
+
+            return (
+                <div className="bg-white min-h-screen font-sans pb-32 relative overflow-x-hidden">
+                
+                {/* Top Navigation Bar - RED THEME */}
+                <div className="bg-red-600 sticky top-0 z-40 shadow-md">
+                    <div className="flex justify-between items-center px-5 py-4 border-b border-red-500">
+                        <div className="flex items-center space-x-3">
+                            <div className="bg-white p-2 rounded-xl shadow-lg">
+                                <img src="https://img.icons8.com/color/48/fried-chicken.png" alt="logo" className="w-6 h-6"/>
+                            </div>
+                            <div>
+                                <h1 className="text-xl font-black text-white leading-none tracking-tight">ZAHRA</h1>
+                                <p className="text-[10px] font-bold text-red-100 uppercase tracking-widest mt-0.5">Fried Chicken</p>
+                            </div>
+                        </div>
+                        <div className="flex space-x-2">
+                            <button className="p-2.5 bg-red-500 rounded-full text-white hover:bg-red-700 transition-colors">
+                                <Search size={20} />
+                            </button>
+                        </div>
+                    </div>
+
+                    {/* Categories */}
+                    <div className="flex overflow-x-auto px-4 py-3 space-x-3 no-scrollbar bg-red-600">
+                    {MENU_DATA.map(cat => (
+                        <button
+                        key={cat.id}
+                        onClick={() => scrollToCategory(cat.id)}
+                        className={`px-5 py-2.5 rounded-full text-sm font-bold whitespace-nowrap transition-all duration-300 border-2 ${
+                            activeCategory === cat.id 
+                            ? 'bg-yellow-400 text-red-900 border-yellow-400 shadow-lg scale-105' 
+                            : 'bg-red-700 text-red-100 border-red-700 hover:bg-red-500'
+                        }`}
+                        >
+                        {cat.name.split('/')[1]} 
+                        </button>
+                    ))}
+                    </div>
+                </div>
+
+                {/* Main Content */}
+                <div className="max-w-xl mx-auto p-4">
+                    {MENU_DATA.map(category => (
+                    <div key={category.id} id={category.id} className="mb-10 scroll-mt-44">
+                        <h2 className="text-2xl font-black text-gray-900 mb-5 px-1 flex items-center tracking-tight border-l-4 border-yellow-400 pl-3">
+                        {category.name}
+                        </h2>
+                        
+                        <div className="grid grid-cols-2 gap-4">
+                        {category.items.map(item => (
+                            <div 
+                                key={item.id} 
+                                className="bg-white rounded-2xl shadow-[0_5px_15px_rgba(0,0,0,0.05)] border border-gray-100 overflow-hidden flex flex-col h-full active:scale-[0.98] transition-transform group"
+                                onClick={() => item.hasVariants ? setShowVariantModal(item) : addToCart(item)}
+                            >
+                            <div className="relative aspect-square bg-gray-100 overflow-hidden">
+                                <img 
+                                    src={item.image} 
+                                    alt={item.name} 
+                                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                                    loading="lazy"
+                                />
+                                
+                                <button 
+                                    onClick={(e) => toggleFavorite(e, item.id)}
+                                    className="absolute top-2 right-2 p-2 bg-white/90 backdrop-blur-sm rounded-full text-gray-300 hover:text-red-600 hover:bg-white transition-all shadow-sm z-10"
+                                >
+                                    <Heart size={16} fill={favorites.includes(item.id) ? "currentColor" : "none"} className={favorites.includes(item.id) ? "text-red-600" : ""}/>
+                                </button>
+
+                                <div className="absolute bottom-2 left-2 bg-yellow-400 text-red-900 px-3 py-1 rounded-lg text-xs font-black shadow-md z-10">
+                                    SAR {item.hasVariants ? item.variants[1].price : item.price}
+                                </div>
+                            </div>
+
+                            <div className="p-3.5 flex flex-col flex-1 justify-between bg-white relative z-20">
+                                <div>
+                                    <h3 className="font-bold text-gray-900 text-[15px] leading-snug mb-1.5">{item.name.split('/')[1]}</h3>
+                                    <p className="text-[10px] text-gray-500 leading-relaxed font-medium line-clamp-2">{item.description || item.name.split('/')[0]}</p>
+                                </div>
+                                
+                                <div className="mt-4 flex justify-end">
+                                    <div className="w-9 h-9 bg-red-50 text-red-600 rounded-full flex items-center justify-center border border-red-100 group-hover:bg-red-600 group-hover:text-white transition-colors shadow-sm">
+                                        <Plus size={18} />
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        ))}
+                        </div>
+                    </div>
+                    ))}
+                </div>
+
+                {/* Variant Modal */}
+                {showVariantModal && (
+                    <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
+                    <div className="absolute inset-0 bg-black/60 backdrop-blur-sm transition-opacity" onClick={() => setShowVariantModal(null)}></div>
+                    <div className="bg-white rounded-[2rem] w-full max-w-sm overflow-hidden shadow-2xl relative z-10 animate-in zoom-in-95 duration-300">
+                        <div className="h-56 w-full overflow-hidden relative">
+                            <img src={showVariantModal.image} className="w-full h-full object-cover" />
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                            <button onClick={() => setShowVariantModal(null)} className="absolute top-4 right-4 p-2 bg-white/20 backdrop-blur-md text-white rounded-full hover:bg-white/30 transition-colors">
+                                <X size={20} />
+                            </button>
+                            <div className="absolute bottom-4 left-4 text-white p-2">
+                                <h3 className="text-2xl font-bold leading-tight">{showVariantModal.name}</h3>
+                            </div>
+                        </div>
+                        
+                        <div className="p-6">
+                            <p className="text-gray-500 text-sm font-bold mb-4 uppercase tracking-wide flex items-center">
+                                <span className="w-2 h-2 bg-yellow-400 rounded-full mr-2"></span>
+                                Select Options
+                            </p>
+                            
+                            <div className="space-y-3">
+                                {showVariantModal.variants.map((v, idx) => (
+                                    <button 
+                                        key={idx}
+                                        onClick={() => addToCart(showVariantModal, v)}
+                                        className="w-full flex justify-between items-center p-4 rounded-xl border border-gray-100 bg-gray-50 hover:border-red-500 hover:bg-red-50 hover:shadow-lg transition-all group"
+                                    >
+                                        <span className="font-bold text-gray-700 group-hover:text-red-700">{v.name}</span>
+                                        <span className="font-bold text-red-600 bg-white border border-red-100 px-3 py-1 rounded-lg shadow-sm">SAR {v.price}</span>
+                                    </button>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                )}
+
+                {/* Bottom Floating Bar */}
+                {cart.length > 0 && (
+                    <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-100 p-4 pb-8 shadow-[0_-10px_30px_rgba(0,0,0,0.05)] z-40 animate-in slide-in-from-bottom-5">
+                    <div className="max-w-xl mx-auto flex items-center space-x-4">
+                        <div className="flex-1 cursor-pointer" onClick={() => setIsCartOpen(true)}>
+                            <div className="text-[10px] text-gray-400 uppercase font-bold tracking-widest mb-0.5">Total</div>
+                            <div className="text-2xl font-black text-gray-900 tracking-tight">SAR {cartTotal.toFixed(2)}</div>
+                        </div>
+
+                        <button 
+                            onClick={() => setIsCartOpen(true)}
+                            className="bg-red-600 text-white px-8 py-3.5 rounded-xl font-bold flex items-center space-x-3 active:scale-95 transition-transform shadow-xl shadow-red-200"
+                        >
+                            <span className="text-sm">View Order</span>
+                            <div className="bg-white/20 text-xs px-2.5 py-1 rounded-full font-bold">{totalItems}</div>
+                        </button>
+                    </div>
+                    </div>
+                )}
+
+                {/* Full Screen Cart */}
+                {isCartOpen && (
+                    <div className="fixed inset-0 z-50 bg-gray-50 flex flex-col animate-in slide-in-from-bottom-10 duration-300">
+                    <div className="p-4 bg-white shadow-sm flex items-center justify-between z-10 border-b border-gray-100">
+                        <h2 className="text-xl font-black text-gray-900">My Order</h2>
+                        <button onClick={() => setIsCartOpen(false)} className="p-2 bg-gray-50 rounded-full hover:bg-gray-100 text-gray-500">
+                            <X size={24} />
+                        </button>
+                    </div>
+
+                    <div className="flex-1 overflow-y-auto p-4">
+                        {cart.length === 0 ? (
+                                <div className="flex flex-col items-center justify-center h-full text-gray-400">
+                                    <ShoppingBag size={64} className="mb-4 opacity-10"/>
+                                    <p className="font-bold text-gray-300">Your basket is empty</p>
+                                </div>
+                        ) : (
+                            <div className="space-y-4">
+                                {cart.map(item => (
+                                    <div key={item.uniqueId} className="bg-white p-4 rounded-2xl shadow-[0_2px_10px_rgba(0,0,0,0.03)] border border-gray-100 flex items-start space-x-4">
+                                        <div className="w-20 h-20 bg-gray-50 rounded-xl overflow-hidden flex-shrink-0">
+                                            <img src={item.image} className="w-full h-full object-cover" />
+                                        </div>
+                                        
+                                        <div className="flex-1 py-1">
+                                            <div className="flex justify-between items-start mb-2">
+                                                <div>
+                                                        <h4 className="font-bold text-gray-900 line-clamp-1 text-sm">{item.name.split('/')[1]}</h4>
+                                                        <h4 className="font-medium text-gray-400 text-xs">{item.name.split('/')[0]}</h4>
+                                                        {item.variantName && <p className="text-xs text-yellow-600 font-bold mt-1 bg-yellow-50 inline-block px-2 py-0.5 rounded">{item.variantName}</p>}
+                                                </div>
+                                                <div className="font-bold text-gray-900">SAR {item.price * item.qty}</div>
+                                            </div>
+
+                                            <div className="flex items-center space-x-3">
+                                                    <div className="flex items-center bg-gray-50 rounded-lg p-1 border border-gray-100">
+                                                        <button onClick={() => updateQty(item.uniqueId, -1)} className="w-7 h-7 bg-white rounded-md shadow-sm flex items-center justify-center text-gray-600 hover:text-red-500">
+                                                            <Minus size={14}/>
+                                                        </button>
+                                                        <span className="w-8 text-center text-sm font-bold">{item.qty}</span>
+                                                        <button onClick={() => updateQty(item.uniqueId, 1)} className="w-7 h-7 bg-white rounded-md shadow-sm flex items-center justify-center text-gray-600 hover:text-green-500">
+                                                            <Plus size={14}/>
+                                                        </button>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        )}
+                    </div>
+
+                    <div className="p-6 bg-white border-t border-gray-100 space-y-4 shadow-[0_-10px_40px_rgba(0,0,0,0.05)] rounded-t-[2rem]">
+                        <div className="flex justify-between text-gray-500 text-sm font-medium">
+                            <span>Subtotal</span>
+                            <span>SAR {cartTotal.toFixed(2)}</span>
+                        </div>
+                        <div className="flex justify-between font-black text-2xl text-gray-900">
+                            <span>Total</span>
+                            <span>SAR {cartTotal.toFixed(2)}</span>
+                        </div>
+                        
+                        <button 
+                            onClick={handleCheckout}
+                            disabled={cart.length === 0}
+                            className="w-full bg-[#25D366] hover:bg-[#20bd5a] text-white py-4 rounded-xl font-bold text-lg flex items-center justify-center space-x-2 shadow-lg shadow-green-200 active:scale-95 transition-all disabled:opacity-50 disabled:scale-100"
+                        >
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="wa" className="w-6 h-6 brightness-0 invert"/>
+                            <span>Send Order to WhatsApp</span>
+                        </button>
+                    </div>
+                    </div>
+                )}
+                </div>
+            );
+        }
+
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<App />);
+    </script>
 </body>
 </html>
