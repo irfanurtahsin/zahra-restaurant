@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zahra Fried Chicken</title>
+    <title>Zahra Restaurant</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- React & ReactDOM -->
@@ -18,7 +18,7 @@
     <script type="text/babel">
         const { useState, useMemo } = React;
 
-        // --- ICONS (Replacements for Lucide-React to work in Browser) ---
+        // --- ICONS ---
         const ShoppingBag = ({size = 24, className = ""}) => (
             <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
         );
@@ -59,7 +59,8 @@
                     name: 'Regular Broasted / بروست عادي', 
                     price: 17, 
                     description: '4 pcs original chicken, fries, garlic sauce, bun', 
-                    image: 'https://images.unsplash.com/photo-1562967960-f0d015c90ec5?auto=format&fit=crop&w=800&q=80' 
+                    // UPDATED IMAGE LINK BELOW
+                    image: 'https://images.unsplash.com/photo-1569058242253-92a9c755a0ec?auto=format&fit=crop&w=800&q=80' 
                 },
                 ]
             },
@@ -95,7 +96,8 @@
                         { name: 'Meal / وجبة', price: 22 },
                         { name: 'Sandwich / ساندويتش', price: 16 }
                     ],
-                    image: 'https://images.unsplash.com/photo-1615297348954-1b12b596201b?auto=format&fit=crop&w=800&q=80' 
+                    // NEW WORKING ZINGER IMAGE
+                    image: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=80' 
                 },
                 ]
             },
@@ -107,12 +109,14 @@
                     id: 401, 
                     name: 'Small Shawarma / شاورما صغير', 
                     price: 4, 
-                    image: 'https://images.unsplash.com/photo-1633321769407-af3c4772e013?auto=format&fit=crop&w=800&q=80' 
+                    // NEW WORKING SHAWARMA IMAGE
+                    image: 'https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&fit=crop&w=800&q=80' 
                 },
                 { 
                     id: 403, 
                     name: 'Rocket Shawarma / صاروخ', 
                     price: 8, 
+                    // NEW WORKING ROCKET IMAGE
                     image: 'https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&fit=crop&w=800&q=80' 
                 },
                 { 
@@ -151,7 +155,8 @@
                     id: 601, 
                     name: 'Strips / ستريس', 
                     price: 20, 
-                    image: 'https://images.unsplash.com/photo-1563897539633-73a8e5013a63?auto=format&fit=crop&w=800&q=80' 
+                    // FIXED STRIPS IMAGE
+                    image: 'https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?auto=format&fit=crop&w=800&q=80' 
                 },
                 { 
                     id: 603, 
@@ -163,7 +168,8 @@
                     id: 604, 
                     name: 'French Fries / فرايز', 
                     price: 5, 
-                    image: 'https://images.unsplash.com/photo-1630384060421-a4323ceca041?auto=format&fit=crop&w=800&q=80' 
+                    // FIXED FRIES IMAGE
+                    image: 'https://images.unsplash.com/photo-1576107232684-1279f390859f?auto=format&fit=crop&w=800&q=80' 
                 },
                 ]
             },
@@ -175,7 +181,8 @@
                     id: 701, 
                     name: 'Pepsi / بيبسي', 
                     price: 2.5, 
-                    image: 'https://images.unsplash.com/photo-1622483767028-3f66f32aef97?auto=format&fit=crop&w=800&q=80' 
+                    // NEW WORKING PEPSI IMAGE (Can)
+                    image: 'https://images.unsplash.com/photo-1629203851122-3726ec6b66de?auto=format&fit=crop&w=800&q=80' 
                 },
                 { 
                     id: 702, 
@@ -185,8 +192,9 @@
                 },
                 { 
                     id: 703, 
-                    name: 'Water / ماء', 
+                    name: 'Water (Nova) / ماء نوفا', 
                     price: 1, 
+                    // NEW WORKING WATER IMAGE (Blue Cap Bottle)
                     image: 'https://images.unsplash.com/photo-1564419320461-6870880221ad?auto=format&fit=crop&w=800&q=80' 
                 },
                 ]
@@ -251,7 +259,7 @@
                 if (cart.length === 0) return;
                 
                 let message = `*New Order / طلب جديد* 🍗\n`;
-                message += `*Zahra Fried Chicken*\n`;
+                message += `*Zahra Restaurant*\n`;
                 message += `------------------\n`;
                 
                 cart.forEach(item => {
@@ -293,7 +301,7 @@
                                 <img src="https://img.icons8.com/color/48/fried-chicken.png" alt="logo" className="w-6 h-6"/>
                             </div>
                             <div>
-                                <h1 className="text-xl font-black text-white leading-none tracking-tight">ZAHRA</h1>
+                                <h1 className="text-xl font-black text-white leading-none tracking-tight">Zahra Restaurant</h1>
                                 <p className="text-[10px] font-bold text-red-100 uppercase tracking-widest mt-0.5">Fried Chicken</p>
                             </div>
                         </div>
